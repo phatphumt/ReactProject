@@ -9,3 +9,15 @@
 .disabled {
   @apply opacity-70
 }
+
+.navbar {
+  @apply flex justify-evenly py-4 px-5 items-center max-w-4xl m-auto 
+}
+
+html {
+  @apply bg-gradient-to-r from-violet-50 to-sky-100
+}
+
+.name {
+  @apply bg-gradient-to-l from-sky-300 to-teal-600 bg-clip-text text-transparent
+}
