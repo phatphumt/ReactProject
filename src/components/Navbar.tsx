@@ -2,6 +2,8 @@ import { Link } from 'react-router-dom';
 import NavLink from './NavLink';
 
 const Navbar = () => {
+	const navs = ['About', 'Contacts'];
+	const toNavs = ['/about', '/contacts'];
 	return (
 		<>
 			<nav className="navbar text-slate-600">
@@ -9,8 +11,9 @@ const Navbar = () => {
 					Site
 				</Link>
 				<ul className="flex items-center gap-5">
-					<NavLink to="/about">About</NavLink>
-					<NavLink to="/contacts">Contacts</NavLink>
+					{navs.map((item, index) => (
+						<NavLink to={toNavs[index]}>{item}</NavLink>
+					))}
 				</ul>
 			</nav>
 		</>

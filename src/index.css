@@ -19,5 +19,5 @@ html {
 }
 
 .name {
-  @apply bg-gradient-to-l from-sky-300 to-teal-600 bg-clip-text text-transparent
+  @apply bg-gradient-to-l from-sky-500 to-teal-600 bg-clip-text text-transparent
 }
